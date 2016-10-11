@@ -8,10 +8,66 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.calculadora.MainActivity">
+    tools:context="com.calculadora.implementation.calc.controller.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_first_number"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/etFirstNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_enter_a_number"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_second_number"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/etSecondNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_enter_a_number"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/str_calc"
+            android:clickable="true"
+            android:onClick="calc" />
+
+        <Switch
+            android:id="@+id/swAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_add"
+            android:switchPadding="10dp"
+            android:drawableTop="@mipmap/ic_launcher" />
+    </LinearLayout>
+
+
 </RelativeLayout>

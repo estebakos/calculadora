@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="str_first_number">Primer número</string>
+    <string name="str_enter_a_number">Ingresa un número</string>
+    <string name="str_second_number">Segundo número</string>
+    <string name="str_calc">Calcular</string>
+    <string name="str_result_label">El resultado de la operación es:</string>
+    <string name="str_add">Sumar</string>
+    <string name="str_is_checked">Lo checkeaste pirobo</string>
+</resources>
